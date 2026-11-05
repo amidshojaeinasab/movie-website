@@ -1,74 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/a001c7932f.js"
-      crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="container">
-      <!-- header  -->
-      <header>
-        <div class="mobile-nav">
-          <button class="burger">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <div class="search-container">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search.." name="search" />
-          </div>
-        </div>
-        <a href="/">
-          <img src="./images/logo.png" alt="" />
-        </a>
-        <nav>
-          <h2>Browse</h2>
-          <ul class="nav-links">
-            <li>
-              <i class="fa-solid fa-layer-group"></i>
-              <a href="/">Discover</a>
-            </li>
-            <li class="active-link">
-              <i class="fa-solid fa-video"></i>
-              <a href="/movies.html">Movies</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-tv"></i>
-              <a href="/tv.html">Tv Series</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-users"></i>
-              <a href="/people.html">People</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div id="mobile-menu" class="overlay">
-        <a class="close">&times;</a>
-        <div class="overlay-content">
-          <div class="active-link-mobile">
-            <i class="fa-solid fa-layer-group"></i>
-            <a href="/">Discover</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-video"></i>
-            <a href="/movies.html">Movies</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-tv"></i>
-            <a href="/tv.html">TvSeries</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-users"></i>
-            <a href="/people.html">People</a>
-          </div>
-        </div>
-      </div>
+<?php 
+require("./views/partials/_header.php");
+require("./views/partials/_nav.php");
+?>
       <main class="list">
         <div class="list-top">
           <h1>Movies</h1>
@@ -100,7 +33,7 @@
               </p>
               <div class="list-item-details-year-rating">
                 <h5>2022</h5>
-                <img src="/images/tmdb.svg" alt="TMDB" />
+                <img src="./public/images/tmdb.svg" alt="TMDB" />
                 <h5>7.8</h5>
               </div>
             </div>
@@ -114,7 +47,7 @@
               <p class="item-title">Thor: Love and Thunder</p>
               <div class="list-item-details-year-rating">
                 <h5>2022</h5>
-                <img src="/images/tmdb.svg" alt="TMDB" />
+                <img src="./public/images/tmdb.svg" alt="TMDB" />
                 <h5>7.8</h5>
               </div>
             </div>
@@ -128,7 +61,7 @@
               <p class="item-title">Jurassic World Dominion</p>
               <div class="list-item-details-year-rating">
                 <h5>2022</h5>
-                <img src="/images/tmdb.svg" alt="TMDB" />
+                <img src="./public/images/tmdb.svg" alt="TMDB" />
                 <h5>7.8</h5>
               </div>
             </div>
@@ -142,7 +75,7 @@
               <p class="item-title">The Ledge</p>
               <div class="list-item-details-year-rating">
                 <h5>2022</h5>
-                <img src="/images/tmdb.svg" alt="TMDB" />
+                <img src="./public/images/tmdb.svg" alt="TMDB" />
                 <h5>7.8</h5>
               </div>
             </div>
@@ -163,8 +96,6 @@
           </div>
         </div>
       </main>
-    </div>
-    <script type="module" src="./js/header.js"></script>
-    <script type="module" src="./js/movies-tv.js"></script>
-  </body>
-</html>
+<?php 
+require("./views/partials/_footer.php");
+?>

@@ -16,7 +16,7 @@
       <!-- header  -->
       <div class="details-header">
         <a href="/">
-          <img src="./images/logo.png" alt="" />
+          <img src="./public/images/logo.png" alt="" />
         </a>
         <div class="search-container-details">
           <input type="text" placeholder="Search.." name="search" />
@@ -190,6 +190,6 @@
         </div>
       </div>
     </div>
-    <script type="module" src="./js/details.js"></script>
+    <script type="module" src="./public/js/details.js"></script>
   </body>
 </html>

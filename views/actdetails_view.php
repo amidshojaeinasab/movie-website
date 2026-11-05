@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>People Details</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <script
       src="https://kit.fontawesome.com/a001c7932f.js"
       crossorigin="anonymous"></script>
@@ -124,6 +124,6 @@
         </div>
       </div>
     </div>
-    <script type="module" src="./js/people-details.js"></script>
+    <script type="module" src="./public/js/people-details.js"></script>
   </body>
 </html>
