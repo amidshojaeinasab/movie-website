@@ -29,19 +29,19 @@
         <nav>
           <h2>Browse</h2>
           <ul class="nav-links">
-            <li class="active-link">
+            <li class="<?= getUrl("/") ? "active-link" : "" ?>">
               <i class="fa-solid fa-layer-group"></i>
               <a href="/">Discover</a>
             </li>
-            <li>
+            <li class="<?= getUrl("/movies.php") ? "active-link" : "" ?>">
               <i class="fa-solid fa-video"></i>
               <a href="./movies.php">Movies</a>
             </li>
-            <li>
+            <li class="<?= getUrl("/series.php") ? "active-link" : "" ?>">
               <i class="fa-solid fa-tv"></i>
               <a href="./series.php">Tv Series</a>
             </li>
-            <li>
+            <li class="<?= getUrl("/actors.php") ? "active-link" : "" ?>">
               <i class="fa-solid fa-users"></i>
               <a href="./actors.php">People</a>
             </li>
