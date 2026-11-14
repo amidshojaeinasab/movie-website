@@ -14,7 +14,7 @@ require("./views/partials/_nav.php");
       <div class="list-item">
         <img
           class="list-item-image"
-          src="/movie-website-master/public/<?= $series["image_path"] ?>"
+          src="<?= $series["image_path"] ?>"
           alt="<?= $series["title"] ?>" />
         <div class="list-item-details">
           <p class="item-title"><?= $series["title"] ?></p>

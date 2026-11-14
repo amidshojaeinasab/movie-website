@@ -7,16 +7,16 @@ require("./views/partials/_nav.php");
           <h1 class="list-top-title-people">Popular People</h1>
         </div>
         <div class="list-items-container">
-          <?php foreach ($actors as $actor):?>
-          <div class="list-item-people">
+          <?php foreach ($actors as $row):?>
+          <a href="./actor-details?id=<?= $row["id"] ?>" class="list-item-people">
             <img
               class="list-item-image"
-              src="/movie-website-master/public/<?= $actor["image"] ?>"
-              alt="<?= $actor["family"] ?>" />
+              src="<?= $row["image"] ?>"
+              alt="<?= $row["family"] ?>" />
             <div class="list-item-details-people">
-              <p class="item-title-people"><?= $actor["name"]. " ". $actor["family"] ?></p>
+              <p class="item-title-people"><?= $row["name"]. " ". $row["family"] ?></p>
             </div>
-          </div>
+          </a>
             <?php endforeach;?>
         </div>
       </main>

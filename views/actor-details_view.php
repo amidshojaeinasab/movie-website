@@ -26,46 +26,33 @@
       <div class="people-details-content">
         <div class="personal-info">
           <img
-            src="https://image.tmdb.org/t/p/w500/jpurJ9jAcLCYjgHHfYF32m3zJYm.jpg"
+            src="<?= $actor["image"] ?>"
             alt="" />
-          <h1 class="people-details-name-mobile">Chris Hemsworth</h1>
+          <h1 class="people-details-name-mobile"><?= $actor["name"]. "" .  $actor["family"] ?></h1>
           <h3 class="personal-info-text">Personal Info</h3>
           <div class="personal-info-items">
             <strong>count Movie</strong>
-            <p>Acting</p>
+            <p>10</p>
           </div>
           <div class="personal-info-items">
             <strong>Gender</strong>
-            <p>Male</p>
+            <p><?= $actor["gender"]==1?"Male":"Female" ?></p>
           </div>
           <div class="personal-info-items">
             <strong>Birthday</strong>
-            <p>1983-08-11 (38 years old)</p>
+            <p><?= $actor["birthday"] ?></p>
           </div>
           <div class="personal-info-items">
             <strong>Place of Birth</strong>
-            <p>Melbourne, Victoria, Australia</p>
+            <p><?= $actor["place_birthday"] ?></p>
           </div>
         </div>
         <div class="people-details-right">
-          <h1 class="people-details-name">Chris Hemsworth</h1>
+          <h1 class="people-details-name"><?= $actor["name"]. "" .  $actor["family"] ?></h1>
           <div class="biography">
             <h3>Biography</h3>
             <p>
-              Chris Hemsworth (born 11 August 1983) is an Australian actor. He
-              is best known for his roles as Kim Hyde in the Australian TV
-              series Home and Away (2004) and as Thor in the Marvel Cinematic
-              Universe films Thor (2011), The Avengers (2012), Thor: The Dark
-              World (2013), Avengers: Age of Ultron (2015), Thor: Ragnarok
-              (2017), Avengers: Infinity War (2018), Avengers: Endgame (2019),
-              and Thor: Love and Thunder (2022). He has also appeared in the
-              science fiction action film Star Trek(2009), the thriller
-              adventure A Perfect Getaway (2009), the horror comedy The Cabin in
-              the Woods (2012), the dark fantasy action film Snow White and the
-              Huntsman (2012), the war film Red Dawn (2012) and the biographical
-              sports drama film Rush (2013).<br /><br />
-              Description above from the Wikipedia article Chris Hemsworth,
-              licensed under CC-BY-SA, full list of contributors on Wikipedia.
+              <?= $actor["biography"] ?>
             </p>
           </div>
           <div class="people-details-scroll-container">

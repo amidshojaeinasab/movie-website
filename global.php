@@ -1,7 +1,7 @@
 <?php 
 //current url
 function currentUrl() {
-    return substr($_SERVER["REQUEST_URI"], strlen("/movie-website-master"));
+    return substr(parse_url($_SERVER["REQUEST_URI"])["path"], strlen("/movie-website-master"));
 }
 
 //Get url
