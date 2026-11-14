@@ -1,3 +1,3 @@
 <?php
 require("./global.php");
-require("./routes.php");
+require("./routers.php");
