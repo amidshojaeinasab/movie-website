@@ -11,7 +11,7 @@ require("./views/partials/_nav.php");
         <div class="list-items-container">
 
         <?php foreach ($series as $series): ?>
-      <div class="list-item">
+      <a href="./movie-details?id=<?= $series["id"] ?>" class="list-item">
         <img
           class="list-item-image"
           src="<?= $series["image_path"] ?>"
@@ -24,7 +24,7 @@ require("./views/partials/_nav.php");
             <h5><?= $series["rate"] ?></h5>
           </div>
         </div>
-      </div>
+      </a>
     <?php endforeach; ?>
           
         </div>

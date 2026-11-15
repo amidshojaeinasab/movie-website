@@ -9,7 +9,7 @@ require("./views/partials/_nav.php");
 
   <div class="list-items-container">
     <?php foreach ($movies as $movie): ?>
-      <div class="list-item">
+      <a href="./movie-details?id=<?= $movie["id"] ?>" class="list-item">
         <img
           class="list-item-image"
           src="/movie-website-master/public/<?= $movie["image_path"] ?>"
@@ -22,7 +22,7 @@ require("./views/partials/_nav.php");
             <h5><?= $movie["rate"] ?></h5>
           </div>
         </div>
-      </div>
+      </a>
     <?php endforeach; ?>
   </div>
 </main>

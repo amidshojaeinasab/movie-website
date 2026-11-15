@@ -10,7 +10,7 @@ require("./views/partials/_nav.php");
   </div>
   <div class="slideshow-container">
     <?php foreach ($sliders as $slider): ?>
-      <a class="mySlides fade">
+      <a href="./movie-details?id=<?= $slider["id"] ?>" class="mySlides fade">
         <img src="/movie-website-master/public/<?= ($slider['image']) ?>" alt="">
         <div class="slider-text">
           <?= $slider['title'] ?>
@@ -40,7 +40,7 @@ require("./views/partials/_nav.php");
         <i class="fa-solid fa-angle-right"></i>
       </button>
       <?php foreach ($newMovies as $newMovie): ?>
-        <a class="info-box">
+        <a href="./movie-details?id=<?= $newMovie["id"] ?>" class="info-box">
           <img
             src="/movie-website-master/public/<?= ($newMovie['image_path']) ?>" />
           <div class="home-scrollbar-title"><?= ($newMovie['title']) ?></div>
@@ -63,7 +63,7 @@ require("./views/partials/_nav.php");
         <i class="fa-solid fa-angle-right"></i>
       </button>
       <?php foreach ($popularMovies as $popularMovie): ?>
-        <a class="info-box">
+        <a href="./movie-details?id=<?= $popularMovie["id"] ?>" class="info-box">
           <img
             src="/movie-website-master/public/<?= ($popularMovie['image_path']) ?>" />
           <div class="home-scrollbar-title"><?= ($popularMovie['title']) ?></div>

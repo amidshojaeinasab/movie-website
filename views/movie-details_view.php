@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Details</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <script
       src="https://kit.fontawesome.com/a001c7932f.js"
       crossorigin="anonymous"
@@ -26,22 +26,19 @@
       <!-- end header  -->
       <div class="details-content">
         <img
-          src="https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg"
+          src="<?= $movie["image_path"] ?>"
           alt="details"
         />
         <div class="details-image-right">
           <div class="details-image-right-top">
-            <h1>Stranger Things</h1>
+            <h1><?= $movie["title"] ?></h1>
             <i class="fa-regular fa-star">
-              <span>8.6</span>
+              <span><?= $movie["rate"] ?></span>
             </i>
           </div>
           <p id="details-overview">
-            When a young boy vanishes, a small town uncovers a mystery involving
-            secret experiments, terrifying supernatural forces, and one strange
-            little girl.
+            <?= $movie["description"] ?>
           </p>
-          <button onclick="readMore()" id="myBtn">Read more</button>
           <h2>Genres</h2>
           <div class="details-genres-container">
             <div class="genres-side-left">

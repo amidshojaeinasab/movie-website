@@ -32,7 +32,7 @@
           <h3 class="personal-info-text">Personal Info</h3>
           <div class="personal-info-items">
             <strong>count Movie</strong>
-            <p>10</p>
+            <p><?= sizeof($movies) ?></p>
           </div>
           <div class="personal-info-items">
             <strong>Gender</strong>
@@ -58,54 +58,14 @@
           <div class="people-details-scroll-container">
             <h3>Known For</h3>
             <div class="people-details-scroll">
+              <?php foreach ($movies as $movie):?>
               <div class="people-details-scroll-item">
                 <img
-                  src="https://image.tmdb.org/t/p/w200/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
-                  alt="img" />
-                <p>The Avengers</p>
+                  src="<?= $$movie["image_path"] ?>"
+                  alt="<?= $movie["title"] ?>" />
+                <p><?= $movie["title"] ?></p>
               </div>
-              <div class="people-details-scroll-item">
-                <img
-                  src="https://image.tmdb.org/t/p/w200/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg"
-                  alt="img" />
-                <p>Avengers: Infinity War</p>
-              </div>
-              <div class="people-details-scroll-item">
-                <img
-                  src="https://image.tmdb.org/t/p/w200/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
-                  alt="img" />
-                <p>Avengers: Endgame</p>
-              </div>
-              <div class="people-details-scroll-item">
-                <img
-                  src="https://image.tmdb.org/t/p/w200/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg"
-                  alt="img" />
-                <p>Avengers: Age of Ultron</p>
-              </div>
-              <div class="people-details-scroll-item">
-                <img
-                  src="https://image.tmdb.org/t/p/w200/uGBVj3bEbCoZbDjjl9wTxcygko1.jpg"
-                  alt="img" />
-                <p>Doctor Strange</p>
-              </div>
-              <div class="people-details-scroll-item">
-                <img
-                  src="https://image.tmdb.org/t/p/w200/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg"
-                  alt="img" />
-                <p>Thor</p>
-              </div>
-              <div class="people-details-scroll-item">
-                <img
-                  src="https://image.tmdb.org/t/p/w200/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg"
-                  alt="img" />
-                <p>Thor: Ragnarok</p>
-              </div>
-              <div class="people-details-scroll-item">
-                <img
-                  src="https://image.tmdb.org/t/p/w200/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg"
-                  alt="img" />
-                <p>Thor: The Dark World</p>
-              </div>
+              <?php endforeach;?>
             </div>
           </div>
         </div>
